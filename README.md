@@ -151,8 +151,8 @@ iv. output: Refers to the output container, which will become visible once the r
 i. This arrow function performs the conversion of a number to its Roman numeral equivalent.<br>
 ii. It uses an array romanEquivalences, which stores Roman numeral symbols and their corresponding integer values (like M for 1000, D for 500, etc.).<br>
 iii. A forEach loop iterates through this array:<br>
- a. It repeatedly subtracts the largest possible Roman numeral value from the input and appends the corresponding Roman numeral symbol to the conversion array.<br>
- b. The result is joined into a string and returned.
+ &nbsp; a. It repeatedly subtracts the largest possible Roman numeral value from the input and appends the corresponding Roman numeral symbol to the conversion array.<br>
+ &nbsp; b. The result is joined into a string and returned.
 ### 3. checkInput Function:
 i. This function is triggered when the user clicks the "Convert" button.<br>
 ii. Input validation: It checks if the input field is empty or contains a non-numeric value. If invalid, it displays an error message.<br>
