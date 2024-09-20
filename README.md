@@ -151,7 +151,7 @@ iv. output: Refers to the output container, which will become visible once the r
 i. This arrow function performs the conversion of a number to its Roman numeral equivalent.<br>
 ii. It uses an array romanEquivalences, which stores Roman numeral symbols and their corresponding integer values (like M for 1000, D for 500, etc.).<br>
 iii. A forEach loop iterates through this array:<br>
- &nbsp; a. It repeatedly subtracts the largest possible Roman numeral value from the input and appends the corresponding Roman numeral symbol to the conversion array.<br>
+ &nbsp; a. It repeatedly subtracts the largest possible Roman numeral value from the input and appends&nbsp; the corresponding Roman numeral symbol to the conversion array.<br>
  &nbsp; b. The result is joined into a string and returned.
 ### 3. checkInput Function:
 i. This function is triggered when the user clicks the "Convert" button.<br>
@@ -160,3 +160,55 @@ iii. Valid input: If the input is valid, the convertToRoman function is called, 
 iv. Output Display: In both cases, it ensures the output container is made visible by changing output.style.display to block.
 ### 4. Event Listener:
 An event listener is attached to the "Convert" button (convertbtn), which calls the checkInput function when clicked.
+```
+// Getting reference of the corresponding HTML file by id
+const input = document.getElementById("number");
+const convertbtn = document.getElementById("convert-btn");
+const result = document.getElementById("result");
+const output = document.getElementById("output");
+
+// Arrow function to convert To roman equivalence
+const convertToRoman = (input) => {
+  // Assigning and initializing the variable
+  const romanEquivalences = [
+    ["M", 1000],
+    ["CM", 900],
+    ["D", 500],
+    ["CD", 400],
+    ["C", 100],
+    ["XC", 90],
+    ["L", 50],
+    ["XL", 40],
+    ["X", 10],
+    ["IX", 9],
+    ["V", 5],
+    ["IV", 4],
+    ["I", 1],
+  ];
+  const conversion = [];
+
+  // Equivalence[1] = M,CM,D,CD,etc and equivalence[0] = 1000,900,1,4etc
+
+  romanEquivalences.forEach((equivalence) => {
+    while (input >= equivalence[1]) {
+      conversion.push(equivalence[0]);
+      input -= equivalence[1];
+    }
+  });
+  return conversion.join("");
+};
+
+const checkInput = () => {
+  // Using parseInt to convert the user given string into a number for better arithmetic operations
+  const numValue = parseInt(input.value, 10);
+
+  if (input.value === "" || isNaN(input.value)) {
+    result.innerHTML = "Please enter numerical value!";
+    output.style.display = "block";
+  } else {
+    result.innerHTML = convertToRoman(numValue);
+    output.style.display = "block";
+  }
+};
+convertbtn.addEventListener("click", checkInput);
+```
