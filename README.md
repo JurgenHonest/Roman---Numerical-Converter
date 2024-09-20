@@ -14,3 +14,30 @@ f. A button (button id="convert-btn" class="convertbtn") labeled "Convert" that 
 g. An output section (div id="output") to display the converted Roman numeral result.
 ### 3. JavaScript:
 The <script src="./script.js"></script> tag at the end includes an external JavaScript file (script.js) to handle the logic of the conversion process.
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roman - Numerical Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./romanman.png" />
+  </head>
+  <body>
+    <img src="romanman.png" />
+    <h1>Roman Numerical Converter</h1>
+    <div class="box">
+      <h2>Enter a number:</h2>
+      <div class="inputBox">
+        <input id="number" class="romanInput" /><br />
+        <button id="convert-btn" class="convertbtn">Convert</button>
+      </div>
+    </div>
+    <div id="output">
+      <div id="result"><p></p></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+```
