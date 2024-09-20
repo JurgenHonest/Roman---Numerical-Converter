@@ -141,3 +141,22 @@ h1 {
   text-align: center;
 }
 ```
+## Javascript 
+### 1. DOM Reference:
+i. input: Gets the HTML input field where the user enters the number.<br>
+ii. convertbtn: References the "Convert" button.<br>
+iii. result: Points to the HTML element where the conversion result will be displayed.<br>
+iv. output: Refers to the output container, which will become visible once the result is ready.
+### 2. convertToRoman Function:
+i. This arrow function performs the conversion of a number to its Roman numeral equivalent.
+ii. It uses an array romanEquivalences, which stores Roman numeral symbols and their corresponding integer values (like M for 1000, D for 500, etc.).
+iii. A forEach loop iterates through this array:
+ a. It repeatedly subtracts the largest possible Roman numeral value from the input and appends the corresponding Roman numeral symbol to the conversion array.
+ b. The result is joined into a string and returned.
+### 3. checkInput Function:
+i. This function is triggered when the user clicks the "Convert" button.<br>
+ii. Input validation: It checks if the input field is empty or contains a non-numeric value. If invalid, it displays an error message.<br>
+iii. Valid input: If the input is valid, the convertToRoman function is called, and the result is displayed in the result section.<br>
+iv. Output Display: In both cases, it ensures the output container is made visible by changing output.style.display to block.
+### 4. Event Listener:
+An event listener is attached to the "Convert" button (convertbtn), which calls the checkInput function when clicked.
