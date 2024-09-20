@@ -148,10 +148,10 @@ ii. convertbtn: References the "Convert" button.<br>
 iii. result: Points to the HTML element where the conversion result will be displayed.<br>
 iv. output: Refers to the output container, which will become visible once the result is ready.
 ### 2. convertToRoman Function:
-i. This arrow function performs the conversion of a number to its Roman numeral equivalent.
-ii. It uses an array romanEquivalences, which stores Roman numeral symbols and their corresponding integer values (like M for 1000, D for 500, etc.).
-iii. A forEach loop iterates through this array:
- a. It repeatedly subtracts the largest possible Roman numeral value from the input and appends the corresponding Roman numeral symbol to the conversion array.
+i. This arrow function performs the conversion of a number to its Roman numeral equivalent.<br>
+ii. It uses an array romanEquivalences, which stores Roman numeral symbols and their corresponding integer values (like M for 1000, D for 500, etc.).<br>
+iii. A forEach loop iterates through this array:<br>
+ a. It repeatedly subtracts the largest possible Roman numeral value from the input and appends the corresponding Roman numeral symbol to the conversion array.<br>
  b. The result is joined into a string and returned.
 ### 3. checkInput Function:
 i. This function is triggered when the user clicks the "Convert" button.<br>
