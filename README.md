@@ -161,6 +161,9 @@ iv. Output Display: In both cases, it ensures the output container is made visib
 ### 4. Event Listener:
 An event listener is attached to the "Convert" button (convertbtn), which calls the checkInput function when clicked.
 ```
+     isNaN = is not a number
+``
+```
 // Getting reference of the corresponding HTML file by id
 const input = document.getElementById("number");
 const convertbtn = document.getElementById("convert-btn");
