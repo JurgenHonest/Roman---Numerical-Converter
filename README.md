@@ -102,14 +102,9 @@ A preview of the Roman Numerical Converter interface.
 
 ---
 
-## Deployment
-
-The application is live and can be accessed at [Roman Numerical Converter](https://sumit-roman-numerical-converter.netlify.app/).
-
----
-
 ## Future Enhancements
 
 - Add support for converting Roman numerals back to numbers.
 - Include more styling options for better user experience.
 - Implement animations for input and output sections.
+----
