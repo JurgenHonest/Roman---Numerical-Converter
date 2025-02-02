@@ -1,7 +1,11 @@
 
 # Roman Numerical Converter
 
-[Live Demo](https://sumit-roman-numerical-converter.netlify.app/)
+## Deployment
+
+The application is live and can be accessed at [Roman Numerical Converter](https://sumit-roman-numerical-converter.netlify.app/).
+
+---
 
 ## Overview
 
@@ -94,6 +98,7 @@ The application logic is implemented using JavaScript:
 
 ## Screenshot
 A preview of the Roman Numerical Converter interface.
+![Screenshot 2025-02-02 160855](https://github.com/user-attachments/assets/3fd653a2-a355-4de2-8770-4e98292a8d44)
 
 ---
 
